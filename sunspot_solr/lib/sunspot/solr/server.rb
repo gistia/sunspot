@@ -30,7 +30,7 @@ module Sunspot
 
       #
       # Bootstrap a new solr_home by creating all required
-      # directories. 
+      # directories.
       #
       # ==== Returns
       #
@@ -180,7 +180,7 @@ module Sunspot
         end
       end
 
-      # 
+      #
       # Create new solr_home, config, log and pid directories
       #
       # ==== Returns
