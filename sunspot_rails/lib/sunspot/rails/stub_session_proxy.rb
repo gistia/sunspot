@@ -31,6 +31,10 @@ module Sunspot
       def remove_all!(clazz = nil)
       end
 
+      def config
+        Sunspot::Configuration.build
+      end
+
       def dirty?
         false
       end
@@ -65,7 +69,7 @@ module Sunspot
       end
 
       class Search
-        
+
         def build
           self
         end
@@ -92,24 +96,24 @@ module Sunspot
           self
         end
       end
-      
-      
+
+
       class PaginatedCollection < Array
-        
+
         def total_count
           0
         end
         alias :total_entries :total_count
-        
+
         def current_page
           1
         end
-        
+
         def per_page
           30
         end
         alias :limit_value :per_page
-        
+
         def total_pages
           1
         end
@@ -138,9 +142,9 @@ module Sunspot
         def offset
           0
         end
-        
+
       end
-      
+
     end
   end
 end
